@@ -3,7 +3,7 @@ h1 {
 }
 .hero-title {
   color: #333333;
-  background-color: blue;
+  background-color: transparent;
 }
 .hero-btn {
   background-color: #66ac66;
@@ -22,4 +22,12 @@ h1 {
 .hero-btn:active {
   color: #66ac66;
   background-color: violet;
+}
+.conteiner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.section {
 }
