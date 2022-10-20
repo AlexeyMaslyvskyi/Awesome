@@ -4,225 +4,206 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Awesome UI</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css
-
-
-
-"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Awesome UI</title>
   </head>
   <body>
-    <header>
-      <div class="conteiner">
-        <nav>
-          <a href="/index.html">
-            <img src="./images/AUlogo.svg" alt="awesome UI logo" title="logoawesomeui" />
-          </a>
-          <ul>
-            <li>
-              <a href="#">Benefits</a>
-            </li>
-            <li>
-              <a href="#">Features</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Team</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button">Register</button>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="Awesome UI logo" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#">Benefits</a>
+              </li>
+              <li>
+                <a class="link" href="#">Features</a>
+              </li>
+              <li>
+                <a class="link" href="#">About</a>
+              </li>
+              <li>
+                <a class="link" href="#">Team</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="primary-button primary-button-small" type="button">
+            Register
+          </button>
+        </div>
       </div>
     </header>
-    <main class="mainn">
-      <section>
-        <div class="conteiner">
-          <h1 class="hero-title">Awesome User Interface is what we can apply</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ex natus cum
-            voluptates velit consectetur dolore amet quos. Sunt modi, voluptate debitis officia odio
-            saepe accusamus fuga nemo corporis numquam.
-          </p>
-          <button class="hero-btn" type="button">Get started</button>
-          <img src="./images/woman.png" width="370" height="600" alt="woman is playing tennis" />
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="hero-container">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Awesome User Interface is what we can apply
+              </h1>
+              <p class="hero-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue
+                et eros, pellentesque et. Tristique ullamcorper ac pharetra in
+                nisi sit vivamus lorem.
+              </p>
+              <button class="primary-button" type="button">
+                Get started
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <img src="./images/hero-image.png" alt="Woman is playing tennis" />
+          </div>
         </div>
       </section>
-      <section>
-        <div class="conteiner">
-          <span>Advantages</span>
-          <h2>Our Benefits</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure aut dolorem voluptatum
-            aliquam quis odio assumenda minima dignissimos, iste incidunt a tenetur nesciunt itaque
-            eius sapiente.
-          </p>
-          <button type="button">Get started</button>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./images/car.svg" alt="car" />
-                <h3>Car Rental</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, corrupti eveniet!
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/ship.svg" alt="boat" />
-                <h3>Boat Cruise</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, corrupti eveniet!
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/bus.svg" alt="bus" />
-                <h3>Bus Trip</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, corrupti eveniet!
-                </p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/road.svg" alt="car on a road" />
-                <h3>Road Trip</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, corrupti eveniet!
-                </p>
-              </a>
-            </li>
-          </ul>
+      <section class="section">
+        <div class="container">
+          <div class="advantages-container">
+            <div class="advantages-content">
+              <h2 class="section-title">Advantages</h2>
+              <p class="section-subtitle">Our benefits</p>
+              <p class="advantages-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo
+                aliquam donec enim, commodo fermum vitae. Et velit sceleris,
+                commodo fermentum vitae. Et velit sceleris
+              </p>
+              <button class="primary-button" type="button">Get started</button>
+            </div>
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <a class="advantage-card" href="#">
+                  <div class="advantage-card-img">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-smart-car"></use>
+                    </svg>
+                  </div>
+                  <h3 class="advantage-card-title">Car Rental</h3>
+                  <p class="advantage-card-text">
+                    Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </a>
+              </li>
+              <li class="advantages-item">
+                <a class="advantage-card" href="#">
+                  <div class="advantage-card-img">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-ship"></use>
+                    </svg>
+                  </div>
+                  <h3 class="advantage-card-title">Boat Cruise</h3>
+                  <p class="advantage-card-text">
+                    Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </a>
+              </li>
+              <li class="advantages-item">
+                <a class="advantage-card" href="#">
+                  <div class="advantage-card-img">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-bus"></use>
+                    </svg>
+                  </div>
+                  <h3 class="advantage-card-title">Bus Trip</h3>
+                  <p class="advantage-card-text">
+                    Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </a>
+              </li>
+              <li class="advantages-item">
+                <a class="advantage-card" href="#">
+                  <div class="advantage-card-img">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-driving"></use>
+                    </svg>
+                  </div>
+                  <h3 class="advantage-card-title">Road Trip</h3>
+                  <p class="advantage-card-text">
+                    Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section>
-        <div class="conteiner">
-          <span>Features </span>
-          <h2>What we can apply</h2>
-          <ul>
-            <li>
-              <a href="#">
-                <img src="./images/python.svg" alt="phyton" />
-                <h3>MOT consectet</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, minima amet.</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/iost.svg" alt="Export iost" />
-                <h3>MOT consectet</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, minima amet.</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/stx.svg" alt="Export stacks" />
-                <h3>MOT consectet</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, minima amet.</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="conteiner">
-          <img src="./images/meating.jpg" alt="people sitting at the table" />
-          <span>About us</span>
-          <h2>Who we are</h2>
+      <section class="section">
+        <div class="container">
+          <img
+            src="./images/about-us-image.jpg"
+            alt="Team is discussing plan"
+          />
+          <h2 class="section-title">About us</h2>
+          <p class="section-subtitle">Who we are</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet
-            dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et
-            velit sceleris, commodo entum vitaefermentum vitae. Et velit sceleris nullam aliquet
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
+            vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam
+            donec enim, commodo fermentum vitae. Et velit sceleris, commodo
+            entum vitaefermentum vitae. Et velit sceleris nullam aliquet
             dignissim
           </p>
-          <button type="button">Get started</button>
-        </div>
-      </section>
-      <section>
-        <div class="conteiner">
-          <span>Our Team </span>
-          <h2>How we look like</h2>
-          <ul>
-            <li>
-              <img src="./images/man1.png" alt="man in pink suit" />
-              <p>CTO May & Baker</p>
-              <h3>Tayo Oshinuwa</h3>
-              <blockquote>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nulla ducimus?"
-              </blockquote>
-            </li>
-            <li>
-              <img src="./images/girl.png" alt="woman in orange skirt" />
-              <p>CTO May & Baker</p>
-              <h3>Tayo Oshinuwa</h3>
-              <blockquote>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nulla ducimus?"
-              </blockquote>
-            </li>
-            <li>
-              <img src="./images/man2.png" alt="man in a red heat" />
-              <p>CTO May & Baker</p>
-              <h3>Tayo Oshinuwa</h3>
-              <blockquote>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nulla ducimus?"
-              </blockquote>
-            </li>
-          </ul>
+          <button class="primary-button" type="button">Get started</button>
         </div>
       </section>
     </main>
     <footer>
-      <div class="conteiner">
-        <a href="/index.html">
-          <img src="./images/AUlogo.svg" alt="awesome UI logo" title="logoawesomeui" />
+      <div class="container">
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="Awesome UI logo" />
         </a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <p>Copyright &copy; 2022 AWESOME</p>
         <p>All rights reserved</p>
         <address>
-          <ul>
+          <ul class="socials-list">
             <li>
-              <a href="#"><img src="./images/instagram.svg" alt="Link to Instagram" /></a>
+              <a class="socials-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"><img src="./images/ball.svg" alt="link to HZ" /></a>
+              <a class="socials-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-dribbble"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"><img src="./images/twitter.svg" alt="Link to Twitter" /></a>
+              <a class="socials-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"><img src="images/youtube.svg" alt="Link to You Tube" /></a>
+              <a class="socials-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </address>
-        <span>Company</span>
-        <ul>
-          <li>Lorem, ipsum 1</li>
-          <li>Lorem 2</li>
-          <li>Lorem 3</li>
-          <li>Lorem 4</li>
-          <li>Lorem 5</li>
-        </ul>
-        <span>Support</span>
-        <ul>
-          <li>Lorem, ipsum 6</li>
-          <li>Lorem, ipsum 7</li>
-          <li>Lorem, ipsum 8</li>
-          <li>Lorem, ipsum 9</li>
-          <li>Lorem, ipsum 10</li>
-          <span>Send message</span>
-          <input type="email" id="email" pattern=".+@globex\.com" size="30" required />
-          <button type="button">Send message</button>
-        </ul>
       </div>
     </footer>
   </body>
